@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Заметка – Как добавить алиас в macOS</title>
+</head>
+<body>
+<main>
+    <article>
+        <h1>Как добавить алиас в macOS</h1>
+        <ol>
+            <li>
+                <p>Открываем/создаем файл .zshrc в текстовом редакторе nano с помощью команды</p>
+                <code>nano ~/.zshrc</code>
+            </li>
+            <li>
+                <p>Вводим alias, название алиаса и команду, которая будет выполняться при вводе алиаса</p>
+                <code>alias bs='npx browser-sync start --server --no-notify --no-ui --files **/*'</code>
+            </li>
+            <li>
+                <p>Для записи в файл нажимаем control + O, для выхода – control + X</p>
+            </li>
+            <li>
+                <p>Чтобы алиас заработал сейчас, нужно обновить shell environment, введя команду</p>
+                <code>source ~/.zshrc</code>
+            </li>
+        </ol>
+        <p>Вот так вот. Теперь алиас будет работать!</p>
+        <img src="alias.png" width="266" height="145" alt="Ввод алиаса bs и успешный запуск browser-sync">
+    </article>
+</main>
+</body>
+</html>
